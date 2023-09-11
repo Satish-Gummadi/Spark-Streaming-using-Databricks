@@ -1,0 +1,73 @@
+
+
+t=1
+input table --> incremental query --> result table --> materialized to sink
+
+t=2
+input table --> incremental query --> result table --> materialized to sink
+
+t=3
+input table --> incremental query --> result table --> materialized to sink
+
+
+modes of result table getting to materalized to sink:
+>Append mode: 
+	Since last trigger, only Result table rows appended
+	Selections, projections supported
+	Aggregations not supported
+
+>Complete mode: 
+	entire updated Result Table is sent across
+	selections, projections, aggregations and ordering, all are supported
+
+>Update mode: 
+	Only Result Table rows updated since last trigger
+	selections, projections, aggregations are supported
+	ordering is not supported
+
+
+
+
+Assignment:
+Car Dataset >> 
+Transformation
+Using streaming source
+
+
+Assignment:
+Predicting Employee attrition
+
+Assignment:
+Storage S3 or ADLS Autoloader: stream analytics
+
+
+
+Stateless and Stateful Transformations:
+
+Stateless: Independent diagnosis
+Stateful: Aggregated result
+
+different windows?
+tumbling
+sliding
+global
+session
+
+
+
+
+Kafka
+In HDInsights
+Event time, embeded
+
+Go to azure
+Create resource group
+Create Virtual Network : Virtually isolated partition, which will contain subnets
+
+
+
+
+
+
+
+
